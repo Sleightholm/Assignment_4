@@ -153,17 +153,19 @@ const PetApp = () => {
   return (
     <View style={styles.container}>
       <View style={styles.progressContainer}>
-        <Text>Happiness</Text>
+        {/* <Text>Happiness</Text> */}
+        <Icon name="mood" size={30} color="#000" />
         <View style={styles.progressBarBackground}>
           <Animated.View
-            style={[styles.progressBarFill, { width: `${displayHappiness}%` }]}
+            style={[styles.HappinessProgressBarFill, { width: `${displayHappiness}%` }]}
           />
         </View>
 
-        <Text>Hunger</Text>
+        {/* <Text>Hunger</Text> */}
+        <Icon name="lunch-dining" size={30} color="#000" />
         <View style={styles.progressBarBackground}>
           <Animated.View
-            style={[styles.progressBarFill, { width: `${displayHunger}%` }]}
+            style={[styles.HungerProgressBarFill, { width: `${displayHunger}%` }]}
           />
         </View>
       </View>
@@ -225,7 +227,7 @@ const PetApp = () => {
                 padding: 10,
               }}
             >
-              <Icon name="close" size={24} color="#000" />
+              <Icon name="close" size={34} color="#000" />
               <Text style={{ marginLeft: 10 }}>Close</Text>
             </TouchableOpacity>
           </View>

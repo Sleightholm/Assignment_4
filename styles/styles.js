@@ -58,9 +58,14 @@ export default StyleSheet.create({
     borderRadius: 10,
     marginVertical: 5, // Adds space between the bars
   },
-  progressBarFill: {
+  HappinessProgressBarFill: {
     height: "100%",
-    backgroundColor: "#4169E1", // Royal blue for better visibility
+    backgroundColor: "#0ae00f", 
+    borderRadius: 10,
+  },
+  HungerProgressBarFill: {
+    height: "100%",
+    backgroundColor: "#e0980a", 
     borderRadius: 10,
   },
 });
