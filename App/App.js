@@ -1,22 +1,17 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, ImageBackground } from 'react-native';
 import PetApp from '../components/PetApp'; // Adjust the path based on your project structure
+import BackgroundImage from '../assets/background1.png';
+import styles from '../styles/styles';
 
 const App = () => {
   return (
+    <ImageBackground source={BackgroundImage} style={styles.container}>
     <SafeAreaView style={styles.container}>
       <PetApp />
     </SafeAreaView>
+    </ImageBackground>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
