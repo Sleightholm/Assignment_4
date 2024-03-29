@@ -4,12 +4,6 @@ export default StyleSheet.create({
   container: {
     flex: 1,
   },
-  points: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#FFD700",
-    fontFamily: "Arial",
-  },
   bottomSection: {
     flex: 0.5, // Gives more space to the bottom section
     justifyContent: "center", // Center align the items
